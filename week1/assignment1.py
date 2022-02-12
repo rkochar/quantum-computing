@@ -100,6 +100,12 @@ class TestSolution(unittest.TestCase):
         zeroOrthogonal = exercise3(zero)
         self.assertTrue(zeroOrthogonal.equiv(one))
 
+    def test(self):
+        pos = Statevector([1 / 2 ** 2, np.exp(np.pi / 3) / 2 ** 2])
+        x, y, z = exercise2(pos)
+        print("x: ", x, "y: ", y, "z: ", z)
+        self.assertTrue(True)
+
 
 # TESTS END HERE
 
